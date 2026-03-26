@@ -1,5 +1,5 @@
 # GroundCount
-This repo stores the major code and results for the paper [GroundCount: Grounding Vision-Language Models with Object Detection for Mitigating Counting Hallucinations](https://arxiv.org/abs/2603.10978). 
+This repo stores the major code for implementing experiments in our paper [GroundCount: Grounding Vision-Language Models with Object Detection for Mitigating Counting Hallucinations](https://arxiv.org/abs/2603.10978). 
 
 
 ## Setting Up Environment
