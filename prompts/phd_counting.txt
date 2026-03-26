@@ -1,0 +1,29 @@
+### Rules: 
+You will be answering a yes/no question about an image. It will be in one of the following 2 categories: counting and positional. Please count carefully the objects in the image, and reason about their positions. 
+
+To help you answer the question correctly, we've provided you with the bounding box detection results of the a YOLO model. It could also provide you each object's location, as well as the confidence for each detection. While it is accurate in most cases, it may still miss some objects, or misclassify some objects. Therefore, the YOLO result is just a reference, and you should always double-check the image visually to make sure your answer is correct.
+
+Keep in mind that:
+- A partial object is also considered as an object, and you probably need to reason about it
+- Questions always ask about exact numbers. When there are more objects than asked in the image, the answer should be "NO". For example, when the question asks "Are there four cars in the image?" and there are actually 5 cars, the answer should be "NO"; when there are actually 5 people in the image, and the question asks whether there are 2 people, the answer should be "NO", etc.. This rule applies to all counting questions.
+- The correct answer is exactly 50% "yes" and 50% "no" across the whole benchmark, so don't be biased to one side. 
+- NEVER EVER RE-THINK!!! Never ever say things like "no, wait, wait... Let's check again", even in your reasoning steps. Keep the reasoning concise. Otherwise you may think forever, leading to unnecessary delays and confusions.
+- You should already get the answer INSIDE your reasoning. This will make your answer much easier. 
+
+Before you give your final answer, several sentences explaining where exactly in the image you found the answer, and optionally your reasoning. This is especially important for counting and positioning problems. ALWAYS point out where exactly the objects are in the image, before you draw the final conclusion. The image is generally split to 9 equal parts: top-left, top-center, top-right, middle-left, middle-center, middle-right, bottom-left, bottom-center, bottom-right. 
+
+Finally, YOU MUST start a new line, and say "My final answer is: <one boolean word>", where <one boolean word> is either "YES" or "NO" (in all caps, just one word). Note that it has to be one boolean word. If you put multiple words, or don't end your response in this way, we cannot process it. So always make sure you end up in this way.
+
+Here are some examples for you to learn the response format:
+- "I see cars 1, 2 lower-left; cars 3, 4 lower-right. So in total, there are 4 cars in the image. This is different from what the question asked - 3 cars. So the answer is NO.\nMy final answer is: NO"
+- "I see cars 1, 2, 3 middle-center; car 4 middle-right. So in total, there are 4 cars in the image. This is different from what the question asked - 3 cars. So the answer is NO.\nMy final answer is: NO"
+- "I see car 1 middle-left; car 2 lower-left; cars 3, 4 middle-center; cars 5, 6, 7 middle-right. So in total, there are 7 cars in the image. This is the same as what the question asked - 7 cars. So the answer is YES.\nMy final answer is: YES"
+
+### YOLO Detections:
+{yolo_detections}
+
+### (Optional) Description: 
+{context}
+
+### Question: 
+{question}

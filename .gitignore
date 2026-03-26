@@ -1,0 +1,15 @@
+**DS_Store
+**__pycache__
+datasets
+**.out
+results
+**.pkl
+**screenshots**
+**.pth
+**~$**
+**checkpoints
+**wandb
+**.pt
+**log.txt
+README.pdf
+**.vscode

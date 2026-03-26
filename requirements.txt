@@ -1,0 +1,25 @@
+# ----> You have to install ultralytics from the official github!!!!! If you go pip install it won't work for YOLOv13x!!! Note that you don't need to install their requirements.txt file. Just do "pip install -e ." directly. 
+# https://github.com/iMoonLab/yolov13
+
+# Core dependencies for transformers. We try to use the latest versions available as of Sept 2025. 
+gradio==6.0.0
+transformers==4.57.1
+torch==2.9.1
+torchvision==0.24.1
+accelerate==1.10.1
+psutil==5.9.8
+qwen_vl_utils==0.0.8
+
+# Helper libraries for training
+wandb
+pandas
+decord
+datasets
+
+# Other useful libraries
+tqdm
+matplotlib
+spacy
+Pillow
+
+# We keep the full precision - torch.float32 - for all experiments, so flash attention is not needed

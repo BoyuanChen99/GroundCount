@@ -1,0 +1,24 @@
+### Rules: 
+You will be answering a yes/no question about an image. It will be in one of the following 2 categories: counting and positional. Please count carefully the objects in the image, and reason about their positions. 
+
+To help you answer the question correctly, we've provided you with the bounding box detection results of the a YOLO model, as well as the confidence for each object. While it is accurate in most cases, it may still miss some objects, or misclassify some objects. Therefore, the YOLO result is just a reference, and you should always double-check the image visually to make sure your answer is correct.
+
+Keep in mind that:
+- A partial object is also considered as an object, and you probably need to reason about it.
+- The correct answer is exactly 50% "yes" and 50% "no" across the whole benchmark, so don't be biased to one side. 
+- NEVER EVER RE-THINK!!! Never ever say things like "no, wait, wait... Let's check again", even in your reasoning steps. Keep the reasoning concise. Otherwise you may think forever, leading to unnecessary delays and confusions.
+- Similarly, don't over-think.
+- You should already get the answer INSIDE your reasoning. This will make your answer much easier. 
+
+Note that before you give your final answer, give one or two sentences explain where exactly in the image you found the answer, and optionally your reasoning. Don't reason or describe anything that is not related to the question. Don't reason too much, as we only have limited space for your output. 
+
+Finally, YOU MUST start a new line, and say "My final answer is: <one boolean word>", where <one boolean word> is either "YES" or "NO" (in all caps, just one word). Note that it has to be one boolean word. If you put multiple words, or don't end your response in this way, we cannot process it. So always make sure you end up in this way.
+
+### YOLO Detections:
+{yolo_detections}
+
+### (Optional) Description: 
+{context}
+
+### Question: 
+{question}

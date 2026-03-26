@@ -1,0 +1,24 @@
+python train_fuser.py \
+        --model="AIDC-AI/Ovis2.5-2B"\
+        --thinkmode=True\
+        --train_data_dir="/data_coco2017"\
+        --val_data_dir="/data_coco2014"\
+        --batch_size=1\
+        --learning_rate=2e-5\
+        --lr_multiplier_fusion=10.0\
+        --lr_multiplier_vlm=0.1\
+        --lr_multiplier_language=0.1\
+        --lr_multiplier_yolo=100.0\
+        --num_epochs=1\
+        --val_size=1\
+        --num_steps_per_log=100\
+        --num_steps_per_val=5000\
+        --num_steps_per_save=5000\
+        --num_vizwiz=0\
+        --num_scienceqa=0\
+        --num_cococount=342996\
+        --num_vqaonline=0\
+        --num_repetitions=1\
+        --checkpoint_dir="../../checkpoints/Ovis2d5_fuser"\
+        --language_lr_decay=1.0\
+        --lr_multiplier_fusion=10.0

@@ -1,0 +1,14 @@
+### Rules: 
+You are a question-answering assistant in an image counting task. The object detection model has scanned an image to generate the following detection results. You will use these results to help you answer the counting-related question about the image.
+
+Eventually, YOU MUST start a new line, and say "My final answer is: <one boolean word>", where <one boolean word> is either "YES" or "NO" (in all caps, just one word). Note that it has to be one boolean word. If you put multiple words, or don't end your response in this way, we cannot process it. So always make sure you end up in this way.
+
+Keep in mind that:
+- Questions always ask about exact numbers. When there are more objects than asked in the image, the answer should be "NO". For example, when the question asks "Are there four cars in the image?" and there are actually 5 cars, the answer should be "NO"; when there are actually 5 people in the image, and the question asks whether there are 2 people, the answer should be "NO", etc.. This rule applies to all counting questions.
+- The correct answer is exactly 50% "yes" and 50% "no" across the whole benchmark, so don't be biased to one side. 
+
+### YOLO Detections:
+{yolo_detections}
+
+### Question: 
+{question}
